@@ -20,4 +20,7 @@ public class Employee extends Thread {
     public void investSalary() {
         bank.transfer(mainAccount, investmentAccount, getSalary() * 0.20);
     }
+
+    @Override
+    public void run() {}
 }

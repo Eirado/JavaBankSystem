@@ -25,6 +25,8 @@ public class Main {
         // Start stores with employees
         Store[] stores = startStores(bank);
 
+
+
         // Print initial account details
         System.out.println("--------- INITIAL ACCOUNT DETAILS ------------");
         printAccountDetails(bank);
@@ -34,6 +36,7 @@ public class Main {
         Customer[] customers = new Customer[NUM_CUSTOMERS];
         startCustomers(stores, bank, customers);
         waitForCustomers(customers);
+
 
         // Print new account details after transfers
         System.out.println("--------- NEW ACCOUNT DETAILS ----------");
